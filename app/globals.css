@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list_table { text-align: center;}
+.list_table tbody tr { border:1px solid #fff;}
+.list_table tbody td {padding:12px 20px;}
+.list_writebox {display: flex; align-items: center; justify-content: space-between;}
+.list_writebox a {border:none; background-color: blueviolet; color:#fff; padding:12px 20px; font-size:18px; font-weight: 700; border-radius: 8px;}
+.myname {color:#fff; font-weight: 700; font-size:20px;}
+.write_inbox {margin-bottom:10px;}
+.write_inbox input {border:1px solid #fff; color:#fff; padding:12px 18px; border-radius: 8px; width:100%; display: block; outline: none;}
+.write_inbox span {font-size:16px; font-weight: 700; display: inline-block;}
+.write_inbox label { margin-bottom:20px; display: inline-block; width:100%;}
+.write_inbox  textarea {resize:none; border:1px solid #fff; color:#fff; padding:12px 18px; border-radius: 8px; width:100%; display: block; height:200px; outline: none;}
+.create_list_title {font-size:20px; font-weight: 700; margin-bottom:10px;}
+.cre_btnbox button {outline: none; background: crimson; color:#fff; font-size:16px; font-weight: 700; cursor:pointer; padding:12px 20px; border-radius: 8px;}
+.cre_btnbox { display: flex; align-items: center; gap:20px;}
+.cre_btnbox a {background-color: #fff;  color:#212121; font-weight: 700; font-size:16px; padding:12px 20px; border-radius: 8px;}
+.write_inbox input:read-only, .write_inbox textarea:read-only{cursor:inherit; background-color: #5b5454; border:none;}
+.modify_btn {display: flex; align-items: center; gap:10px;}
+.modify_btn button:nth-child(1) {background-color:crimson;}
+.modify_btn button:nth-child(3) {background-color:white; color:#212121;}
+.modify_btn a {background-color: royalblue;}
+.modify_btn button, .modify_btn a {padding:12px 20px; border-radius: 8px; outline: none; cursor:pointer;}
