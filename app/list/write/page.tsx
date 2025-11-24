@@ -48,7 +48,7 @@ export default function BoardWrite() {
 
       alert("글이 등록되었습니다.");
       // 글 목록 페이지로 이동 (경로는 프로젝트에 맞게 유지 or 수정)
-      router.push("/boardList");
+      router.push("/list");
     } catch (err) {
       console.error(err);
       alert("서버 통신 중 오류가 발생했습니다.");

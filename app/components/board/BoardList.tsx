@@ -11,7 +11,7 @@ export default function BoardList() {
   useEffect(() => {
     const fetchBoard = async () => {
       try {
-        const res = await fetch("/api/list"); // list 테이블을 조회하는 API
+        const res = await fetch("/api/list");
         if (!res.ok) {
           throw new Error("게시글을 불러오는데 실패했습니다.");
         }

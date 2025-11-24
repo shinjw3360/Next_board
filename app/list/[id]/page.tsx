@@ -57,7 +57,7 @@ export default function ListChange() {
       }
 
       alert("글이 삭제되었습니다.");
-      router.push("/boardList"); // 목록으로 이동
+      router.push("/list"); // 목록으로 이동
     } catch (err) {
       console.error(err);
       alert("서버 통신 중 오류가 발생했습니다.");

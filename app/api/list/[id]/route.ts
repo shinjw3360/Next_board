@@ -37,7 +37,7 @@ export async function PUT(req: NextRequest, {params}:{params: {id:string}}) {
         const {id} = await params;
 
         await db.query(
-            'UPDATE board SET title=?, writer=?, contents=? WHERE id=?', 
+            'UPDATE list SET title=?, writer=?, contents=? WHERE id=?', 
             [title, writer, contents, id]
         );
         return NextResponse.json({message:'게시글 수정 성공'}, {status: 200})
