@@ -8,5 +8,5 @@ export default function List() {
     <div>
         <BoardList />
     </div>
-)
+  )
 }
